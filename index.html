@@ -6,17 +6,17 @@
 </head>
 <body>
 <script>
-    class Apple {
+    class Apple{
         constructor(weight) {
             this.weight = weight;
         }
         setWeight(weight){
             this.weight = weight;
         }
-        decrease(){
+        decrease(){     'giam bot'
             this.weight--
             if(this.weight ===0){
-                console.log('Tao còn gì đâu mà ăn')
+                return this.weight = 0;
             }
         }
         getWeight(){
@@ -29,38 +29,43 @@
             this.gender = gender;
             this.weight = weight;
         }
-        setName(name){
-            this.name = name;
-        }
-        getName(){
+
+        getName() {
             return this.name;
         }
-        setGender(gender){
-            this.gender = gender;
+
+        setName(name) {
+            this.name = name;
         }
-        getGender(){
+
+        getGender() {
             return this.gender;
         }
-        setWeight(weight){
-            this.weight = weight;
+
+        setGender(gender) {
+            this.gender = gender;
         }
-        getWeight(){
+
+        getWeight() {
             return this.weight;
         }
-        say(name, gender){
-            console.log('Tôi là: '+this.name + ' giới tính: '+this.gender + ' Tôi thích ăn Táo')
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        say(name, gender) {
+            console.log('tên của anh là : ' + this.name + 'giới tính : ' + this.gender + 'anh thích ăn táo');
+            return this.name;
+            return this.gender;
         }
         eat(apple){
-            console.log('ăn 1 miếng táo - yêu eval ngàn lần')
             this.weight++;
             apple.decrease();
         }
-        checkApple(apple){
-            console.log(apple.getWeight());
-        }
     }
-    let apple = new Apple(2);
-    let adam = new Human('Adam','nam',70)
+    let apple = new Apple(3);
+    let adam = new Human('adam','nam',99);
 </script>
 
 </body>
